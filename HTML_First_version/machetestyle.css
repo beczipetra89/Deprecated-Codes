@@ -1,9 +1,17 @@
-body {
+/*Author: Petra Beczi
+  Email: beczipetra89@gmail.com 
+
+CSS Stylesheet for machete.com
+*/
+
+
+
+body {					/*Background of the page */
   	margin:0px;
 	background-color: black;
 
 }
-#pagewrapper{
+#pagewrapper{				/*Wraps all the elements between this border */
 	margin:auto;
 	width: 780px;
 	height: 960px;
@@ -12,7 +20,7 @@ body {
 	
 }
 
-#header{
+#header{				/*Header div which will contain logo and navigation bar */
 	color: white;
  	width: 100%;
  	float: left;
@@ -25,14 +33,14 @@ body {
 
 
 
-#logo { 
+#logo { 				/*The logo on the top on the left side */
 	position:absolute; 
 	z-index:1; 
 	top: 36px; 
 }
 
 
-/*#wrap_menu{
+/*#wrap_menu{				/*This div will wrap the navigation bar, currently unused  */
  	color:white;
  	width: 75%;
  	float: right;
@@ -41,7 +49,7 @@ body {
  	margin: 0px 0px 0px 0px;
  	background-color: black;
 }*/
-.nav{
+.nav{					/*Navigation bar's position */
 	overflow: hidden;
 	display: inline-block;
 	position:absolute;
@@ -51,7 +59,7 @@ body {
 
 }
 
-.nav li{
+.nav li{				/*Navigation bar's list with custom color */
 	background-color: #cde575;
 	background-image: -webkit-gradient(linear,left top, left bottom,from(#ddeda0), color-stop(0.5,#cde575), color-stop(0.51, #c3e058));
 	background-image: -moz-linear-gradient(#ddeda0 0%, #cde575 50%, #c3e058 51%);
@@ -67,7 +75,7 @@ body {
 	list-style: none;
 }
 
-.nav li:after{
+.nav li:after{				/*Navigation bar's list custom color after click */
 	content:'.';
 	text-indent:-9999px;
 	overflow:hidden;
@@ -93,11 +101,11 @@ body {
 }
 
 
-.nav li:first-child{
+.nav li:first-child{			/*Before the first <li> selected */
 	border-radius: 4px 0 0 4px;
 }
 
-.nav li:first-child:after,
+.nav li:first-child:after,		/*After selected the first <li> get shadow */
 .nav li.selected:first-child:after{
 	box-shadow:1px 0 0 #a3a3a3,2px 0 0 #fff;
 	-moz-box-shadow:1px 0 0 #a3a3a3,2px 0 0 #fff;
@@ -105,12 +113,12 @@ body {
 	border-radius:4px 0 0 4px;
 }
 
-.nav li:last-child{
+.nav li:last-child{				/*Before the second <li> selected */
 	border-radius: 0 4px 4px 0;
 }
 
 
-.nav li:last-child:after,
+.nav li:last-child:after,			/*After selected the second <li> get shadow */
 .nav li.selected:last-child:after{
 	box-shadow:-1px 0 0 #a3a3a3,-2px 0 0 #fff;
 	-moz-box-shadow:-1px 0 0 #a3a3a3,-2px 0 0 #fff;
@@ -118,7 +126,7 @@ body {
 	border-radius:0 4px 4px 0;
 }
 
-.nav li:hover:after,
+.nav li:hover:after,		/*When cursor is on the list, or selecting also selected, get shadow */
 .nav li.selected:after,
 .nav li:target:after{
 	opacity:1;
@@ -135,7 +143,7 @@ body {
 }
 
 
-.nav li a{
+.nav li a{				/*Navigation bar's list's font style and position */
 	color: #5d5d5d;
 	display: inline-block;
 	font: 20px/1 Lobster,Arial,sans-serif;
@@ -154,18 +162,18 @@ body {
 
 
 
-a, a:visited {
+a, a:visited {			/*No underlined link in the list and custom color(Otherwise it is blue and underlined */
 	text-decoration:none;
 	outline:none;
 	color:#54a6de;
 }
 
-a:hover{
+a:hover{			/*Underline clicked link */
 	text-decoration:underline;
 }
 
 
-#lineseparator{
+#lineseparator{			/*Separates "head" from the "body" and gradient color */
 	float: left;
  	width: 781px;
  	height:5px;
@@ -180,7 +188,7 @@ a:hover{
 }
 
 
-#leftcolumn { 
+#leftcolumn { 			/*Left side container div */
  	color: black;
  	background:  #cde575;
 	margin: 6px 0px 0px 0px;
@@ -191,7 +199,7 @@ a:hover{
 	border-bottom-left-radius: 4px;
 }
 
-#calendar{
+#calendar{		/*Calendar positioning div */
 	color:black;
 	margin:50px 0px 0px 25px;
 	height:30px;
@@ -205,7 +213,7 @@ a:hover{
 }
 
 
-#searchbar{
+#searchbar{				/*Search div */
 	color:black;
 	margin:40px 0px 0px 25px;
 	height:40px;
@@ -213,7 +221,7 @@ a:hover{
 	background-color:white;
 }
 
-#links{
+#links{				/*Link container's div */
 	
 	margin:20px 0px 0px 25px;
 	height:20px;
@@ -233,31 +241,31 @@ a:hover{
 	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.6);
 }
 
-#linklist {
+#linklist {		/*Linklist position and width */
     
     margin:0px 0px 40px 0px;
 	width:150px;
 }
-#linklist li {
+#linklist li {		/*Linklist's list style */
     display:inline;
 
     margin-right:10px;
 }
-#linklist a {
+#linklist a {		/*Linklist's font style*/
     text-decoration:none;
    color:#a3a3a3;
 
 
 }
 
-#linklist a:hover{
+#linklist a:hover{	/*Clicked linklist's style change */
 
     text-decoration:underline;
     color:white;
 }
 
 
-#rightcolumn { 
+#rightcolumn { 		/*Right side container  */
 	float: left;
  	color: black;
 	background: #f1f8d9; /* #f1f8d9*/
@@ -269,7 +277,7 @@ a:hover{
 	border-bottom-right-radius: 4px;
 }
 
-#contactinfo{
+#contactinfo{		/*Feedback's div */
 	float:left;
 
 	margin:7px 0px 0px 0px;
@@ -282,10 +290,10 @@ a:hover{
 }
 
 
-.shadowBox{box-shadow: 8px 8px 6px -4px black;}
+.shadowBox{box-shadow: 8px 8px 6px -4px black;} 
 
 
-#feedback{
+#feedback{				/*Feedback's div */
 	margin:150px 0px 0px 0px;
 	height:330px;
 	width:200px;
